@@ -561,7 +561,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
 }
-.product .common_product {
+.product_common {
   width: 261px;
   height: 100%;
   background-repeat: no-repeat;
@@ -569,17 +569,22 @@ body {
   padding-top: 299px;
   padding-left: 14px;
   position: relative;
+  transition: box-shadow 1s, background-color 1s;
 }
-.product .common_product:hover {
+.product_common:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
+  transition: box-shadow 1s, background-color 1s;
 }
-.product .common_product:hover .hover_product {
-  display: flex;
+.product_common:hover .product_hover {
   cursor: pointer;
+  opacity: 100%;
+  transition: opacity 1s;
 }
-.product .hover_product {
-  display: none;
+.product_hover {
+  transition: opacity 1s;
+  opacity: 0;
+  display: flex;
   background-repeat: no-repeat;
   background-image: url(img/Background_product.png);
   position: absolute;
@@ -597,6 +602,8 @@ body {
   border: 1px solid #ffffff;
   justify-content: center;
   align-items: center;
+  box-shadow: none;
+  transition: box-shadow 1s;
 }
 .product_button a {
   color: #ffffff;
@@ -611,6 +618,7 @@ body {
   padding-right: 8px;
 }
 .product_button:hover {
+  transition: box-shadow 1s;
   box-shadow: 0 0 5px #fff;
 }
 .product__color {
@@ -644,7 +652,7 @@ body {
 .product_8 {
   background-image: url(img/product_8.jpg);
 }
-.product .browse__product {
+.product_browse {
   justify-content: center;
   align-items: center;
   margin-top: 58px;
@@ -657,7 +665,7 @@ body {
   letter-spacing: 0.4px;
   transition: color 1.5s, background 1.5s, border 1.5s;
 }
-.product .browse__product:hover {
+.product_browse:hover {
   color: #f16d7f;
   background-color: #ffffff;
   outline: 1px solid #f16d7f;

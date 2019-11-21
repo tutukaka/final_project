@@ -460,7 +460,7 @@ body
     font-size: 13px
     font-weight: 400
     text-transform: uppercase
-  .common_product
+  &_common
     width: 261px
     height: 100%
     background-repeat: no-repeat
@@ -468,14 +468,20 @@ body
     padding-top: 299px
     padding-left: 14px
     position: relative
+    transition: box-shadow 1s, background-color 1s
     &:hover
       box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
       background-color: #ffffff
-    &:hover .hover_product
-      display: flex
+      transition: box-shadow 1s, background-color 1s
+    &:hover .product_hover
+
       cursor: pointer
-  .hover_product
-    display: none
+      opacity: 100%
+      transition: opacity 1s
+  &_hover
+    transition: opacity 1s
+    opacity: 0
+    display: flex
     background-repeat: no-repeat
     background-image: url(img/Background_product.png)
     position: absolute
@@ -492,6 +498,8 @@ body
     border: 1px solid #ffffff
     justify-content: center
     align-items: center
+    box-shadow: none
+    transition: box-shadow 1s
     & a
       color: #ffffff
       font-size: 13px
@@ -503,6 +511,7 @@ body
     & img
       padding-right: 8px
     &:hover
+      transition: box-shadow 1s
       box-shadow: 0 0 5px #fff
   &__color
     color: #f16d7f
@@ -526,7 +535,7 @@ body
     background-image: url(img/product_7.jpg)
   &_8
     background-image: url(img/product_8.jpg)
-  .browse__product
+  &_browse
     justify-content: center
     align-items: center
     margin-top: 58px
