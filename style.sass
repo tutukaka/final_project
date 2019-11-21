@@ -365,44 +365,14 @@ body
 
 .category_promo
   padding-top: 98px
-  .banner
+  &_banner
     width: 560px
     height: 823px
   .baner2
     width: 560px
     height: 823px
     margin-left: 20px
-  .promo1
-    width: 560px
-    height: 542px
-    background-image: url(img/promo1.jpg)
-    margin-bottom: 20px
-    position: relative
-  .promo2
-    width: 560px
-    height: 261px
-    background-color: #dadad2
-    position: relative
-  .promo__img
-    width: 411px
-    height: 240px
-    background-image: url(img/promo2.jpg)
-    background-repeat: no-repeat
-    position: absolute
-    right: 0
-    z-index: inherit
-  .promo3
-    width: 560px
-    height: 261px
-    background-image: url(img/promo3.jpg)
-    margin-bottom: 20px
-    position: relative
-  .promo4
-    width: 560px
-    height: 542px
-    background-image: url(img/promo4.jpg)
-    position: relative
-  .badge
+  &_badge
     background-color: #ffffff
     color: #222222
     font-size: 18px
@@ -411,15 +381,47 @@ body
     letter-spacing: 0.45px
     padding-left: 19px
     padding-top: 16px
-  .common__promo:hover
-    box-shadow: 8px 14px 5px rgba(0, 0, 0, 0.16)
-  .common__promo2:hover
-    box-shadow: -8px 14px 5px rgba(0, 0, 0, 0.16)
-  .badge__color
-    color: #f16d7f
-    font-size: 30px
-    letter-spacing: 0.75px
-    font-weight: 700
+    &__color
+      color: #f16d7f
+      font-size: 30px
+      letter-spacing: 0.75px
+      font-weight: 700
+  &_common
+    box-shadow: none
+    transition: box-shadow 1s
+    &:hover
+      transition: box-shadow 1s
+      box-shadow: 8px 14px 5px rgba(0, 0, 0, 0.16)
+    &_2:hover
+      transition: box-shadow 1s
+      box-shadow: -8px 14px 5px rgba(0, 0, 0, 0.16)
+    &_img_1, &_img_4
+      width: 560px
+      height: 542px
+      margin-bottom: 20px
+      position: relative
+    &_img_1
+      background-image: url(img/promo1.jpg)
+    &_img_4
+      background-image: url(img/promo4.jpg)
+    &_img_2, &_img_3
+      width: 560px
+      height: 261px
+      margin-bottom: 20px
+      position: relative
+    &_img_3
+      background-image: url(img/promo3.jpg)
+    &_img_2
+      background-color: #dadad2
+      &_position
+        width: 411px
+        height: 240px
+        background-repeat: no-repeat
+        background-image: url(img/promo2.jpg)
+        position: absolute
+        right: 0
+        z-index: inherit
+
   .badge_1
     width: 175px
     height: 82px
@@ -474,7 +476,6 @@ body
       background-color: #ffffff
       transition: box-shadow 1s, background-color 1s
     &:hover .product_hover
-
       cursor: pointer
       opacity: 100%
       transition: opacity 1s
@@ -491,8 +492,11 @@ body
     top: 0
     left: 0
     justify-content: center
-    padding-top: 98px
+    &_a
+      width: 100%
+      height: 100%
   &_button
+    position: absolute
     width: 123px
     height: 39px
     border: 1px solid #ffffff
@@ -500,6 +504,7 @@ body
     align-items: center
     box-shadow: none
     transition: box-shadow 1s
+    margin-top: 98px
     & a
       color: #ffffff
       font-size: 13px
@@ -576,27 +581,31 @@ body
     background-repeat: no-repeat
     background-image: url(img/sale_1.jpg)
     &_text
-      color: #ffffff
-      font-size: 54px
-      font-weight: 700
-      text-transform: uppercase
-      letter-spacing: 1.5px
-      text-decoration: none
       width: 100%
       height: 100%
       background-image: url(img/sale_fons.png)
       padding-left: 39px
       padding-top: 146px
-      & span
-        color: #f16d7f
-        letter-spacing: 1.5px
+      transition: outline-color 1s
+      outline: 1px solid transparent
       &:hover
+        transition: outline-color 1s
         outline: 1px solid #f16d7f
-      & p
-        font-size: 32px
-        letter-spacing: 0.9px
+      &_style
         color: #ffffff
+        font-size: 54px
+        font-weight: 700
         text-transform: uppercase
+        letter-spacing: 1.5px
+        text-decoration: none
+        &_span
+          color: #f16d7f
+          letter-spacing: 1.5px
+        &_p
+          font-size: 32px
+          letter-spacing: 0.9px
+          color: #ffffff
+          text-transform: uppercase
   &__list
     padding: 25px 0
     width: 373px
@@ -1086,12 +1095,14 @@ body
   &__list
     list-style-type: none
     border-top: 0.5px solid #e8e8e8
-    &:hover &_drop
-      border: none
-    &:hover &_drop &_drop_content
-      height: 460px
-      opacity: 1
-      transition: height 2s, opacity 3s
+    //&:hover &_drop
+    //  border: none
+    &_label_selector
+      display: none
+      &:checked ~ * .checkout__list_drop_content
+        height: 460px
+        opacity: 1
+        transition: height 2s, opacity 3s
     &_heading
       display: block
       color: #222222

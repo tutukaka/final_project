@@ -447,7 +447,7 @@ body {
 .category_promo {
   padding-top: 98px;
 }
-.category_promo .banner {
+.category_promo_banner {
   width: 560px;
   height: 823px;
 }
@@ -456,42 +456,7 @@ body {
   height: 823px;
   margin-left: 20px;
 }
-.category_promo .promo1 {
-  width: 560px;
-  height: 542px;
-  background-image: url(img/promo1.jpg);
-  margin-bottom: 20px;
-  position: relative;
-}
-.category_promo .promo2 {
-  width: 560px;
-  height: 261px;
-  background-color: #dadad2;
-  position: relative;
-}
-.category_promo .promo__img {
-  width: 411px;
-  height: 240px;
-  background-image: url(img/promo2.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 0;
-  z-index: inherit;
-}
-.category_promo .promo3 {
-  width: 560px;
-  height: 261px;
-  background-image: url(img/promo3.jpg);
-  margin-bottom: 20px;
-  position: relative;
-}
-.category_promo .promo4 {
-  width: 560px;
-  height: 542px;
-  background-image: url(img/promo4.jpg);
-  position: relative;
-}
-.category_promo .badge {
+.category_promo_badge {
   background-color: #ffffff;
   color: #222222;
   font-size: 18px;
@@ -501,17 +466,56 @@ body {
   padding-left: 19px;
   padding-top: 16px;
 }
-.category_promo .common__promo:hover {
-  box-shadow: 8px 14px 5px rgba(0, 0, 0, 0.16);
-}
-.category_promo .common__promo2:hover {
-  box-shadow: -8px 14px 5px rgba(0, 0, 0, 0.16);
-}
-.category_promo .badge__color {
+.category_promo_badge__color {
   color: #f16d7f;
   font-size: 30px;
   letter-spacing: 0.75px;
   font-weight: 700;
+}
+.category_promo_common {
+  box-shadow: none;
+  transition: box-shadow 1s;
+}
+.category_promo_common:hover {
+  transition: box-shadow 1s;
+  box-shadow: 8px 14px 5px rgba(0, 0, 0, 0.16);
+}
+.category_promo_common_2:hover {
+  transition: box-shadow 1s;
+  box-shadow: -8px 14px 5px rgba(0, 0, 0, 0.16);
+}
+.category_promo_common_img_1, .category_promo_common_img_4 {
+  width: 560px;
+  height: 542px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.category_promo_common_img_1 {
+  background-image: url(img/promo1.jpg);
+}
+.category_promo_common_img_4 {
+  background-image: url(img/promo4.jpg);
+}
+.category_promo_common_img_2, .category_promo_common_img_3 {
+  width: 560px;
+  height: 261px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.category_promo_common_img_3 {
+  background-image: url(img/promo3.jpg);
+}
+.category_promo_common_img_2 {
+  background-color: #dadad2;
+}
+.category_promo_common_img_2_position {
+  width: 411px;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-image: url(img/promo2.jpg);
+  position: absolute;
+  right: 0;
+  z-index: inherit;
 }
 .category_promo .badge_1 {
   width: 175px;
@@ -594,9 +598,13 @@ body {
   top: 0;
   left: 0;
   justify-content: center;
-  padding-top: 98px;
+}
+.product_hover_a {
+  width: 100%;
+  height: 100%;
 }
 .product_button {
+  position: absolute;
   width: 123px;
   height: 39px;
   border: 1px solid #ffffff;
@@ -604,6 +612,7 @@ body {
   align-items: center;
   box-shadow: none;
   transition: box-shadow 1s;
+  margin-top: 98px;
 }
 .product_button a {
   color: #ffffff;
@@ -700,26 +709,31 @@ body {
   background-image: url(img/sale_1.jpg);
 }
 .feature__offer_text {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/sale_fons.png);
+  padding-left: 39px;
+  padding-top: 146px;
+  transition: outline-color 1s;
+  outline: 1px solid transparent;
+}
+.feature__offer_text:hover {
+  transition: outline-color 1s;
+  outline: 1px solid #f16d7f;
+}
+.feature__offer_text_style {
   color: #ffffff;
   font-size: 54px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   text-decoration: none;
-  width: 100%;
-  height: 100%;
-  background-image: url(img/sale_fons.png);
-  padding-left: 39px;
-  padding-top: 146px;
 }
-.feature__offer_text span {
+.feature__offer_text_style_span {
   color: #f16d7f;
   letter-spacing: 1.5px;
 }
-.feature__offer_text:hover {
-  outline: 1px solid #f16d7f;
-}
-.feature__offer_text p {
+.feature__offer_text_style_p {
   font-size: 32px;
   letter-spacing: 0.9px;
   color: #ffffff;
@@ -1310,10 +1324,10 @@ body {
   list-style-type: none;
   border-top: 0.5px solid #e8e8e8;
 }
-.checkout__list:hover .checkout__list_drop {
-  border: none;
+.checkout__list_label_selector {
+  display: none;
 }
-.checkout__list:hover .checkout__list_drop .checkout__list_drop_content {
+.checkout__list_label_selector:checked ~ * .checkout__list_drop_content {
   height: 460px;
   opacity: 1;
   transition: height 2s, opacity 3s;
