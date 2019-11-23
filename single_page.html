@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 </head>
 
 <body>
@@ -60,28 +61,49 @@
                             <div class="cart_product">
                                 <table  class="cart_product_table">
                                     <tr>
-                                        <td class="cart_product_column cart_product_child_1"><a href="#"><img class="cart_product_img_product flex" src="img/cart_img.jpg" alt="photo"></a></td>
+                                        <td class="cart_product_column cart_product_child_1">
+                                            <a href="#"><img class="cart_product_img_product flex"
+                                                             src="img/cart_img.jpg" alt="photo"></a></td>
                                         <td class="cart_product_column cart_product_child_2">
-                                            <a class="cart_product_child_2_a" href="#"><h3 class="cart_product_child_2_a_h3">Rebox Zane</h3>
+                                            <a class="cart_product_child_2_a" href="#">
+                                                <h3 class="cart_product_child_2_a_h3">Rebox Zane</h3>
                                                 <img src="img/stars.jpg" alt="stars">
-                                                <p class="cart_product_child_2_a_p">1  x   <span class="cart_product_child_2_a_p_span">$250</span></p></a></td>
-                                        <td class="cart_product_column cart_product_child_3"><a class="cart_product_child_3_a" href="#"><i class="cart_product_child_3_a_i fas fa-times-circle"></i></a></td>
+                                                <p class="cart_product_child_2_a_p">1  x
+                                                    <span class="cart_product_child_2_a_p_span">$250
+                                                    </span></p></a></td>
+                                        <td class="cart_product_column cart_product_child_3">
+                                            <a class="cart_product_child_3_a" href="#">
+                                                <i class="cart_product_child_3_a_i fas fa-times-circle">
+                                                </i></a></td>
                                     </tr>
                                     <tr>
-                                        <td class="cart_product_column cart_product_child_1"><a href="#"><img class="cart_product_img_product flex" src="img/women_product.jpg" alt=""></a></td>
+                                        <td class="cart_product_column cart_product_child_1">
+                                            <a href="#"><img class="cart_product_img_product flex"
+                                                             src="img/women_product.jpg" alt=""></a></td>
                                         <td class="cart_product_column cart_product_child_2">
-                                            <a class="cart_product_child_2_a" href="#"><h3 class="cart_product_child_2_a_h3">Rebox Zane</h3>
+                                            <a class="cart_product_child_2_a" href="#">
+                                                <h3 class="cart_product_child_2_a_h3">Rebox Zane</h3>
                                                 <img src="img/stars.jpg" alt="stars">
-                                                <p class="cart_product_child_2_a_p">1  x   <span class="cart_product_child_2_a_p_span">$250</span></p></a></td>
-                                        <td class="cart_product_column cart_product_child_3"><a class="cart_product_child_3_a" href="#"><i class="cart_product_child_3_a_i fas fa-times-circle"></i></a></td>
+                                                <p class="cart_product_child_2_a_p">1  x
+                                                    <span class="cart_product_child_2_a_p_span">$250
+                                                    </span></p></a></td>
+                                        <td class="cart_product_column cart_product_child_3">
+                                            <a class="cart_product_child_3_a" href="#">
+                                                <i class="cart_product_child_3_a_i fas fa-times-circle">
+                                                </i></a></td>
                                     </tr>
                                 </table>
                                 <div class="cart_product_text_price flex">
-                                    <h3 class="cart_product_text_price_h3">TOTAL</h3><h3 class="cart_product_text_price_h3">$500.00</h3>
+                                    <h3 class="cart_product_text_price_h3">TOTAL</h3>
+                                    <h3 class="cart_product_text_price_h3">$500.00</h3>
                                 </div>
                             </div>
-                            <div class="cart_product_button cart_product_button_checkout flex"><a  class="cart_product_button_a cart_product_button_checkout_a flex" href="#">Checkout</a></div>
-                            <div class="cart_product_button flex"><a class="cart_product_button_a flex" href="Shopping_cart.html">Go to cart</a></div>
+                            <div class="cart_product_button cart_product_button_checkout flex">
+                                <a  class="cart_product_button_a cart_product_button_checkout_a flex"
+                                    href="checkout.html">Checkout</a></div>
+                            <div class="cart_product_button flex">
+                                <a class="cart_product_button_a flex"
+                                   href="Shopping_cart.html">Go to cart</a></div>
                         </div>
                     </div>
                 </div>
@@ -91,7 +113,7 @@
     </div>
     <ul class="menu flex">
         <li class="menu__list"><a href="index.html" class="menu__link decoration_none">Home</a></li>
-        <li class="menu__list"><a href="Product.html" class="menu__link decoration_none">Man</a>
+        <li class="menu__list"><a href="#" class="menu__link decoration_none">Man</a>
             <div class="drop">
                 <div class="drop__flex">
                     <h3 class="drop__h3">Women</h3>
@@ -140,40 +162,45 @@
         <li class="menu__list"><a href="#" class="menu__link decoration_none">Kids</a></li>
         <li class="menu__list"><a href="#" class="menu__link decoration_none">Accoseriese</a></li>
         <li class="menu__list"><a href="#" class="menu__link decoration_none">Featured</a></li>
-        <li class="menu__list"><a href="checkout.html" class="menu__link decoration_none">Hot Deals </a></li>
+        <li class="menu__list"><a href="#" class="menu__link decoration_none">Hot Deals </a></li>
     </ul>
     <div class="Breadcrumb">
         <div class="Breadcrumb_filling container flex bxbb">
             <div class="Breadcrumb_text">New Arrivals</div>
             <div class="Breadcrumb_menu">
                 <ul class="flex">
-                    <li class="Breadcrumb_list"><a href="#" class="Breadcrumb_link">home&nbsp;/&nbsp;</a></li>
-                    <li class="Breadcrumb_list"><a href="#" class="Breadcrumb_link">Women&nbsp;/&nbsp;</a></li>
-                    <li class="Breadcrumb_list"><a href="#" class="Breadcrumb_link Breadcrumb_link_active">New Arrivals</a></li>
+                    <li class="Breadcrumb_list">
+                        <a href="#" class="Breadcrumb_link">home&nbsp;/&nbsp;</a></li>
+                    <li class="Breadcrumb_list">
+                        <a href="#" class="Breadcrumb_link">Women&nbsp;/&nbsp;</a></li>
+                    <li class="Breadcrumb_list">
+                        <a href="#" class="Breadcrumb_link Breadcrumb_link_active">New Arrivals</a></li>
                 </ul>
             </div>
         </div>
     </div>
-
     <div class="single_image_slide flex">
         <div><a class="single_image_chevron flex" href="#"><i class="fas fa-chevron-left"></i></a></div>
         <div><a href="#"><img src="img/women_product.jpg" alt="photo"></a></div>
         <div><a class="single_image_chevron flex" href="#"><i class="fas fa-chevron-right"></i></a></div>
     </div>
-
     <div class="product_description container relative">
         <div class="product_description_absolute container bxbb">
             <div>
-                <div class="product_description_absolute_h4 flex relative"><h4>WOMEN COLLECTION</h4></div>
+                <div class="product_description_absolute_h4 flex relative">
+                    <h4>WOMEN COLLECTION</h4></div>
                 <h3>Moschino Cheap And Chic</h3>
                 <div  class="product_description_absolute_text">
                     <p>
-                        Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
-                         collaborative architectures before cutting-edge services. Completely visualize parallel core competencies
+                        Compellingly actualize fully researched processes
+                        before proactive outsourcing. Progressively syndicate
+                         collaborative architectures before cutting-edge
+                        services. Completely visualize parallel core competencies
                         rather than exceptional portals. </p>
                 </div>
                 <div class="product_description_absolute_details flex">
-                    <p class="product_description_absolute_details_p1"> MATERIAL: <span>COTTON</span></p><p>DESIGNER: <span>BINBURHAN</span></p></div>
+                    <p class="product_description_absolute_details_p1"> MATERIAL:
+                        <span>COTTON</span></p><p>DESIGNER: <span>BINBURHAN</span></p></div>
                 <p class="product_description_absolute_price">$561</p>
             </div>
             <div class="flex jcc">
@@ -209,34 +236,77 @@
                             </label>
                         </div>
                     </div>
-                    <div class="product_description_button flex jcc"><a class="flex jcc aic" href="#"><img src="img/Forma_1_copy.svg" alt="ico">Add to Cart</a></div>
+                    <div class="product_description_button flex jcc">
+                        <a class="flex jcc aic" href="#">
+                            <img src="img/Forma_1_copy.svg" alt="ico">Add to Cart</a></div>
                 </form>
             </div>
         </div>
     </div>
-
     <div class="you_may container bxbb">
         <h3>you may like also</h3>
-        <div class="list__product container">
-            <div class="you_may__sub__list  flex">
-                <div class="product_like  bxbb">
-                    <a class="product_like_img flex" href="#"><img src="img/product_like_1.png" alt="photo"></a>
-                    <div class="product__text product_like_text">Mango People T-shirt <br> <span class="product__color">$52.00</span>
+        <div class="product__list container flex">
+            <div class="product__common bxbb">
+                <div class="product__common_img flex">
+                    <div class="product__common_img_style flex">
+                        <img src="img/product_like_1.png" alt="photo"></div>
+                </div>
+                <div class="product__common_text">18 Mango People T-shirt <br>
+                    <span class="product__common_color">$52.00</span>
+                    <div class="product__common_hover bxbb">
+                        <a href="single_page.html" class="product__common_hover_a flex"></a>
+                        <div class="product__common_button flex">
+                            <a class="product__common_button_a flex" href="#">
+                                <img class="product__common_button_img"
+                                     src="img/hover_product.svg" alt="ico">Add to Cart</a></div>
                     </div>
                 </div>
-                <div class="product_like bxbb">
-                    <a class="product_like_img flex" href="#"><img src="img/product_like_2.png" alt="photo"></a>
-                    <div class="product__text product_like_text">Mango People T-shirt <br> <span class="product__color">$52.00</span>
+            </div>
+            <div class="product__common bxbb">
+                <div class="product__common_img flex">
+                    <div class="product__common_img_style flex">
+                        <img src="img/product_like_2.png" alt="photo"></div>
+                </div>
+                <div class="product__common_text">19 Mango People T-shirt <br>
+                    <span class="product__common_color">$52.00</span>
+                    <div class="product__common_hover bxbb">
+                        <a href="single_page.html" class="product__common_hover_a flex"></a>
+                        <div class="product__common_button flex">
+                            <a class="product__common_button_a flex" href="#">
+                                <img class="product__common_button_img"
+                                     src="img/hover_product.svg" alt="ico">Add to Cart</a></div>
                     </div>
                 </div>
-                <div class="product_like  bxbb">
-                    <a class="product_like_img flex" href="#"><img src="img/product_like_3.png" alt="photo"></a>
-                    <div class="product__text product_like_text">Mango People T-shirt <br> <span class="product__color">$52.00</span>
+            </div>
+            <div class="product__common bxbb">
+                <div class="product__common_img flex">
+                    <div class="product__common_img_style flex">
+                        <img src="img/product_like_3.png" alt="photo"></div>
+                </div>
+                <div class="product__common_text">20 Mango People T-shirt <br>
+                    <span class="product__common_color">$52.00</span>
+                    <div class="product__common_hover bxbb">
+                        <a href="single_page.html" class="product__common_hover_a flex"></a>
+                        <div class="product__common_button flex">
+                            <a class="product__common_button_a flex" href="#">
+                                <img class="product__common_button_img"
+                                     src="img/hover_product.svg" alt="ico">Add to Cart</a></div>
                     </div>
                 </div>
-                <div class="product_like bxbb">
-                    <a class="product_like_img flex" href="#"><img src="img/product_like_4.png" alt="photo"></a>
-                    <div class="product__text product_like_text">Mango People T-shirt <br> <span class="product__color">$52.00</span>
+            </div>
+            <div class="product__common bxbb">
+                <div class="product__common_img flex">
+                    <div class="product__common_img_style flex">
+                        <img src="img/product_like_4.png" alt="photo"></div>
+                </div>
+                <div class="product__common_text">21 Mango People T-shirt <br>
+                    <span class="product__common_color">$52.00</span>
+                    <div class="product__common_hover bxbb">
+                        <a href="single_page.html" class="product__common_hover_a flex"></a>
+                        <div class="product__common_button flex">
+                            <a class="product__common_button_a flex" href="#">
+                                <img class="product__common_button_img"
+                                     src="img/hover_product.svg" alt="ico">Add to Cart</a></div>
                     </div>
                 </div>
             </div>
@@ -256,7 +326,8 @@
                     <div class="subscribe__part_1 bxbb">
 
                         <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <br>
-                            a pulvinar purus condimentum a. Aliquam condimentum <br> mattis neque sed pretium”</p>
+                            a pulvinar purus condimentum a. Aliquam condimentum <br>
+                            mattis neque sed pretium”</p>
                         <p class="dhaka"><span>Bin Burhan</span> <br>
                             Dhaka, Bd</p>
                     </div>
@@ -268,7 +339,8 @@
 
                     <form action="#">
                         <label>
-                            <input class="subscribe__submit bxbb" type="text" placeholder="Enter Your Email">
+                            <input class="subscribe__submit bxbb" type="text"
+                                   placeholder="Enter Your Email">
                         </label>
                         <label>
                         <button class="subscribe__button bxbb" type="submit">Subscribe</button>

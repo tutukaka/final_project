@@ -1,35 +1,27 @@
 *
   margin: 0
   padding: 0
-
 .bxbb 
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
-
 .flex 
   display: flex
-
 .block
   display: block
-
 .jcc
   justify-content: center
 .aic
   align-items: center
 a 
   text-decoration: none
-
-.relative 
+.relative
   position: relative
-
 body 
   font-family: 'Lato', sans-serif
-
 .container 
   width: 1140px
   margin: 0 auto
-
 .logo 
   color: #222222
   font-size: 27px
@@ -44,7 +36,6 @@ body
     border-bottom: 1px solid #f16d7f
   &__img
     margin-right: 13px
-
 .browse 
   border-radius: 3px 0 0 3px
   border: 1px solid #e6e6e6
@@ -58,6 +49,7 @@ body
   font-size: 14px
   font-weight: 300
   letter-spacing: 0.35px
+  cursor: pointer
   &:hover
     color: #222222
     box-shadow: -1px 0 2px
@@ -201,6 +193,7 @@ body
   font-size: 14px
   font-weight: 300
   letter-spacing: 0.35px
+  cursor: pointer
   &:hover
     box-shadow: -1px 0 2px
 
@@ -447,103 +440,107 @@ body
 .product
   padding-top: 100px
   text-align: center
-  & h3
+  &__list
+    flex-flow: row wrap
+    padding-top: 32px
+    text-align: left
+  &__h3
     color: #222222
     font-size: 30px
     font-weight: 700
     letter-spacing: 0.75px
-  & p
+  &__p
     color: #9f9f9f
     font-size: 14px
     font-weight: 400
     letter-spacing: 0.35px
-  &__text
-    color: #222222
-    font-size: 13px
-    font-weight: 400
-    text-transform: uppercase
-  &_common
+  &__common
     width: 261px
-    height: 100%
+    height: 364px
     background-repeat: no-repeat
     line-height: 9px
-    padding-top: 299px
-    padding-left: 14px
     position: relative
     transition: box-shadow 1s, background-color 1s
+    flex: 1 1 auto
+    margin: 28px 12px 12px
     &:hover
       box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
       background-color: #ffffff
       transition: box-shadow 1s, background-color 1s
-    &:hover .product_hover
+    &:hover &_hover
       cursor: pointer
       opacity: 100%
       transition: opacity 1s
-  &_hover
-    transition: opacity 1s
-    opacity: 0
-    display: flex
-    background-repeat: no-repeat
-    background-image: url(img/Background_product.png)
-    position: absolute
-    width: 100%
-    height: 100%
-    z-index: 1
-    top: 0
-    left: 0
-    justify-content: center
-    &_a
-      width: 100%
-      height: 100%
-  &_button
-    position: absolute
-    width: 123px
-    height: 39px
-    border: 1px solid #ffffff
-    justify-content: center
-    align-items: center
-    box-shadow: none
-    transition: box-shadow 1s
-    margin-top: 98px
-    & a
-      color: #ffffff
-      font-size: 13px
-      font-weight: 400
-      letter-spacing: 0
-      text-transform: none
+    &_img
       justify-content: center
       align-items: center
-    & img
-      padding-right: 8px
-    &:hover
-      transition: box-shadow 1s
-      box-shadow: 0 0 5px #fff
-  &__color
-    color: #f16d7f
-    font-size: 16px
-    font-weight: 700
-    text-transform: uppercase
-    line-height: 40px
-  &_1
-    background-image: url(img/product_1.jpg)
-  &_2
-    background-image: url(img/product_2.jpg)
-  &_3
-    background-image: url(img/product_3.jpg)
-  &_4
-    background-image: url(img/product_4.jpg)
-  &_5
-    background-image: url(img/product_5.jpg)
-  &_6
-    background-image: url(img/product_6.jpg)
-  &_7
-    background-image: url(img/product_7.jpg)
-  &_8
-    background-image: url(img/product_8.jpg)
+      &_style
+        width: 261px
+        height: 279px
+        align-items: center
+        justify-content: center
+    &_text
+      color: #222222
+      font-size: 13px
+      font-weight: 400
+      text-transform: uppercase
+      margin: 19px 0 0 14px
+    &_hover
+      transition: opacity 1s
+      opacity: 0
+      display: flex
+      background-repeat: no-repeat
+      background-size: contain
+      background-image: url(img/Background_product.png)
+      position: absolute
+      width: 100%
+      height: 100%
+      z-index: 1
+      top: 0
+      left: 0
+      justify-content: center
+      &_a
+        width: 100%
+        height: 100%
+    &_button
+      width: 123px
+      height: 39px
+      position: absolute
+      margin-top: 98px
+      &_a
+        box-shadow: none
+        transition: box-shadow 1s
+        border: 1px solid #ffffff
+        width: 100%
+        height: 100%
+        color: #ffffff
+        font-size: 13px
+        font-weight: 400
+        letter-spacing: 0
+        text-transform: none
+        justify-content: center
+        align-items: center
+        border-radius: 3px
+        &:hover
+          transition: box-shadow 1s
+          box-shadow: 0 0 5px #fff
+        &_man
+          width: 57px
+          height: 39px
+          margin-top: 8px
+          margin-right: 8px
+      &_img
+        padding-right: 8px
+    &_color
+      color: #f16d7f
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+      line-height: 40px
   &_browse
     justify-content: center
     align-items: center
-    margin-top: 58px
+    margin-top: 46px
     width: 212px
     height: 48px
     background-color: #f16d7f
@@ -557,17 +554,6 @@ body
       background-color: #ffffff
       outline: 1px solid #f16d7f
       transition: color 1.5s, background 1.5s, outline 1.5s
-
-.list__product
-  padding-top: 60px
-  text-align: left
-  .sub__list__product
-    height: 364px
-    justify-content: space-between
-  .sub__list__product2
-    height: 403px
-    padding-top: 39px
-    justify-content: space-between
 
 .feature
   height: 529px
@@ -631,6 +617,7 @@ body
     width: 100%
     justify-content: center
     align-items: center
+
 
 .man_product_all_pading 
   padding-top: 60px
@@ -768,39 +755,10 @@ body
   &_list_right
     padding-left: 18px
   &_list
+    margin-right: -12px
+    padding-left: 18px
     flex-flow: row wrap
-  &:hover .man__product__hover
-    display: block
-  &__hover
-    width: 100%
-    height: 100%
-    display: none
-    position: absolute
-    background-image: url(img/Hover_Bg.png)
-    padding-top: 98px
-    padding-left: 70px
-  &__img
-    height: 280px
-    align-items: flex-end
-    justify-content: center
-    position: relative
-  &__img_8
-    background-color: rgba(227, 176, 55, 0.09)
-  &__text
-    width: 100%
-    height: 84px
-    background-color: #fff
-    padding: 19px 15px
-    & h3
-      color: #6f6e6e
-      font-size: 13px
-      font-weight: 400
-      text-transform: uppercase
-    & p
-      color: #f16d7f
-      font-size: 16px
-      font-weight: 700
-      text-transform: uppercase
+
   &_filter
     height: 50px
     background-color: #f3f3f3
@@ -826,7 +784,7 @@ body
       margin-bottom: 40px
       justify-content: space-between
 
-.man_buttob_product_big
+.man_button_product_big
   color: #ffffff
   font-size: 13px
   font-weight: 700
@@ -839,20 +797,10 @@ body
   &:hover
     box-shadow: 0 0 5px #fff
 
-.man_buttob_product_little 
-  color: #ffffff
-  font-size: 13px
-  font-weight: 700
-  width: 57px
-  height: 39px
-  border-radius: 3px
-  border: 1px solid #ffffff
-  align-items: center
-  justify-content: center
-  margin-top: 8px
-  margin-right: 8px
-  &:hover
-    box-shadow: 0 0 5px #fff
+.product__common_button_man
+  position: absolute
+  top: 40px
+  left: -1px
 
 .man__pagination 
   margin-top: 40px
@@ -1128,6 +1076,7 @@ body
         padding-top: 15px
         margin-top: 30px
         transition: box-shadow 1.1s
+        cursor: pointer
         &:hover
           transition: box-shadow 1.1s
           box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.25), 0 6px 4px rgba(0, 0, 0, 0.22)
@@ -1147,6 +1096,7 @@ body
           font-weight: 700
           text-transform: uppercase
           line-height: 28px
+          cursor: pointer
         &_label input[type="radio"]
           margin-right: 14px
         &_paragraph
@@ -1471,6 +1421,7 @@ body
     font-weight: 400
     letter-spacing: 0.35px
     transition: color 1.5s, background 1.5s, border 1.5s
+    cursor: pointer
     &:hover
       color: #f16d7f
       background-color: #ffffff

@@ -73,6 +73,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.35px;
+  cursor: pointer;
 }
 .browse:hover {
   color: #222222;
@@ -247,6 +248,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.35px;
+  cursor: pointer;
 }
 .search:hover {
   box-shadow: -1px 0 2px;
@@ -547,49 +549,66 @@ body {
   padding-top: 100px;
   text-align: center;
 }
-.product h3 {
+.product__list {
+  flex-flow: row wrap;
+  padding-top: 32px;
+  text-align: left;
+}
+.product__h3 {
   color: #222222;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.75px;
 }
-.product p {
+.product__p {
   color: #9f9f9f;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.35px;
 }
-.product__text {
-  color: #222222;
-  font-size: 13px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-.product_common {
+.product__common {
   width: 261px;
-  height: 100%;
+  height: 364px;
   background-repeat: no-repeat;
   line-height: 9px;
-  padding-top: 299px;
-  padding-left: 14px;
   position: relative;
   transition: box-shadow 1s, background-color 1s;
+  flex: 1 1 auto;
+  margin: 28px 12px 12px;
 }
-.product_common:hover {
+.product__common:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
   transition: box-shadow 1s, background-color 1s;
 }
-.product_common:hover .product_hover {
+.product__common:hover .product__common_hover {
   cursor: pointer;
   opacity: 100%;
   transition: opacity 1s;
 }
-.product_hover {
+.product__common_img {
+  justify-content: center;
+  align-items: center;
+}
+.product__common_img_style {
+  width: 261px;
+  height: 279px;
+  align-items: center;
+  justify-content: center;
+}
+.product__common_text {
+  color: #222222;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 19px 0 0 14px;
+}
+.product__common_hover {
   transition: opacity 1s;
   opacity: 0;
   display: flex;
   background-repeat: no-repeat;
+  background-size: contain;
   background-image: url(img/Background_product.png);
   position: absolute;
   width: 100%;
@@ -599,22 +618,22 @@ body {
   left: 0;
   justify-content: center;
 }
-.product_hover_a {
+.product__common_hover_a {
   width: 100%;
   height: 100%;
 }
-.product_button {
-  position: absolute;
+.product__common_button {
   width: 123px;
   height: 39px;
-  border: 1px solid #ffffff;
-  justify-content: center;
-  align-items: center;
-  box-shadow: none;
-  transition: box-shadow 1s;
+  position: absolute;
   margin-top: 98px;
 }
-.product_button a {
+.product__common_button_a {
+  box-shadow: none;
+  transition: box-shadow 1s;
+  border: 1px solid #ffffff;
+  width: 100%;
+  height: 100%;
   color: #ffffff;
   font-size: 13px;
   font-weight: 400;
@@ -622,49 +641,32 @@ body {
   text-transform: none;
   justify-content: center;
   align-items: center;
+  border-radius: 3px;
 }
-.product_button img {
-  padding-right: 8px;
-}
-.product_button:hover {
+.product__common_button_a:hover {
   transition: box-shadow 1s;
   box-shadow: 0 0 5px #fff;
 }
-.product__color {
+.product__common_button_a_man {
+  width: 57px;
+  height: 39px;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+.product__common_button_img {
+  padding-right: 8px;
+}
+.product__common_color {
   color: #f16d7f;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 40px;
 }
-.product_1 {
-  background-image: url(img/product_1.jpg);
-}
-.product_2 {
-  background-image: url(img/product_2.jpg);
-}
-.product_3 {
-  background-image: url(img/product_3.jpg);
-}
-.product_4 {
-  background-image: url(img/product_4.jpg);
-}
-.product_5 {
-  background-image: url(img/product_5.jpg);
-}
-.product_6 {
-  background-image: url(img/product_6.jpg);
-}
-.product_7 {
-  background-image: url(img/product_7.jpg);
-}
-.product_8 {
-  background-image: url(img/product_8.jpg);
-}
 .product_browse {
   justify-content: center;
   align-items: center;
-  margin-top: 58px;
+  margin-top: 46px;
   width: 212px;
   height: 48px;
   background-color: #f16d7f;
@@ -679,20 +681,6 @@ body {
   background-color: #ffffff;
   outline: 1px solid #f16d7f;
   transition: color 1.5s, background 1.5s, outline 1.5s;
-}
-
-.list__product {
-  padding-top: 60px;
-  text-align: left;
-}
-.list__product .sub__list__product {
-  height: 364px;
-  justify-content: space-between;
-}
-.list__product .sub__list__product2 {
-  height: 403px;
-  padding-top: 39px;
-  justify-content: space-between;
 }
 
 .feature {
@@ -939,46 +927,9 @@ body {
   padding-left: 18px;
 }
 .man__product_list {
+  margin-right: -12px;
+  padding-left: 18px;
   flex-flow: row wrap;
-}
-.man__product:hover .man__product__hover {
-  display: block;
-}
-.man__product__hover {
-  width: 100%;
-  height: 100%;
-  display: none;
-  position: absolute;
-  background-image: url(img/Hover_Bg.png);
-  padding-top: 98px;
-  padding-left: 70px;
-}
-.man__product__img {
-  height: 280px;
-  align-items: flex-end;
-  justify-content: center;
-  position: relative;
-}
-.man__product__img_8 {
-  background-color: rgba(227, 176, 55, 0.09);
-}
-.man__product__text {
-  width: 100%;
-  height: 84px;
-  background-color: #fff;
-  padding: 19px 15px;
-}
-.man__product__text h3 {
-  color: #6f6e6e;
-  font-size: 13px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-.man__product__text p {
-  color: #f16d7f;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
 }
 .man__product_filter {
   height: 50px;
@@ -1010,7 +961,7 @@ body {
   justify-content: space-between;
 }
 
-.man_buttob_product_big {
+.man_button_product_big {
   color: #ffffff;
   font-size: 13px;
   font-weight: 700;
@@ -1021,25 +972,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-.man_buttob_product_big:hover {
+.man_button_product_big:hover {
   box-shadow: 0 0 5px #fff;
 }
 
-.man_buttob_product_little {
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 700;
-  width: 57px;
-  height: 39px;
-  border-radius: 3px;
-  border: 1px solid #ffffff;
-  align-items: center;
-  justify-content: center;
-  margin-top: 8px;
-  margin-right: 8px;
-}
-.man_buttob_product_little:hover {
-  box-shadow: 0 0 5px #fff;
+.product__common_button_man {
+  position: absolute;
+  top: 40px;
+  left: -1px;
 }
 
 .man__pagination {
@@ -1359,6 +1299,7 @@ body {
   padding-top: 15px;
   margin-top: 30px;
   transition: box-shadow 1.1s;
+  cursor: pointer;
 }
 .checkout__list_drop_button:hover {
   transition: box-shadow 1.1s;
@@ -1383,6 +1324,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 28px;
+  cursor: pointer;
 }
 .checkout__list_drop_content_label input[type=radio] {
   margin-right: 14px;
@@ -1772,6 +1714,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.35px;
   transition: color 1.5s, background 1.5s, border 1.5s;
+  cursor: pointer;
 }
 .subscribe__button:hover {
   color: #f16d7f;
