@@ -1,7 +1,12 @@
-const catalogItem = {
-    props: ['item', 'quantityItem', 'recount', 'address'],
+const catalogListProductItem = {
+    props: ['item', 'test', 'num', 'address'],
+    methods: {
+        outConsole(num) {
+            console.log(num)
+        }
+    },
     template: `
-    <div  v-if="+recount < +quantityItem" class="product__common bxbb">
+    <div v-if="+num<+test" class="product__common bxbb" > {{ outConsole(num) }}
         <div class="product__common_img flex"><div class="product__common_img_style flex">
             <img :src="item.img" alt="photo"></div>
         </div>
@@ -13,7 +18,7 @@ const catalogItem = {
                     <a class="product__common_button_a flex" href="#">
                     <img class="product__common_button_img"
                          src="img/hover_product.svg" alt="ico">Add to Cart</a>
-            <div v-if="address" class="product__common_button_man flex">
+                         <div v-if="address" class="product__common_button_man flex">
                                     <a class="product__common_button_a
                                     product__common_button_a_man flex" href="#">
                                         <img src="img/hover_product2.svg" alt=""></a>
@@ -24,25 +29,18 @@ const catalogItem = {
     `
 };
 
-Vue.component('catalog', {
-    props: ['quantityItem', 'address'],
+Vue.component('catalog-list-product', {
+    props: ['test', 'address'],
     data(){
         return {
             items: [],
-            recount: 0
+            numbers: 0
         }
     },
     components: {
-        'catalog-item': catalogItem,
+        'cataloglog-list-product-item': catalogListProductItem,
     },
     methods: {
-        classNameTag(address){
-            if(address){
-                return `man__product_list flex bxbb`
-            } else {
-                return `product__list container flex`
-            }
-        }
     },
     mounted(){
         this.$parent.getJson('https://raw.githubusercontent.com/tutukaka/final_project/first_try/catalog.json')
@@ -51,15 +49,15 @@ Vue.component('catalog', {
             });
     },
     template: `
-    <div  :class="classNameTag(address)">
-        <catalog-item v-for="item in items"
+    <div  v-if="address" class="man__product_list flex bxbb">
+        <cataloglog-list-product-item v-for="item in items"
             :key="item.id"
             :item="item"
-            :address="address"
-            :recount="recount++"
-            :quantity-item="quantityItem"
-        ></catalog-item>
-    </div></div>
+            :addres="address"
+            :num="numbers++"
+            :test="test"
+        ></cataloglog-list-product-item>
+    </div>
     `
 });
 

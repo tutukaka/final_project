@@ -573,7 +573,6 @@ body {
   line-height: 9px;
   position: relative;
   transition: box-shadow 1s, background-color 1s;
-  flex: 1 1 auto;
   margin: 28px 12px 12px;
 }
 .product__common:hover {

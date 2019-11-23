@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/all.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="js/productList.js" defer></script>
+    <script src="js/global.js" defer></script>
 </head>
 
 <body>
+    <div class="global">
     <div class="header">
         <div class="container flex header__flex">
             <div class="header__left flex">
@@ -245,72 +248,10 @@
     </div>
     <div class="you_may container bxbb">
         <h3>you may like also</h3>
-        <div class="product__list container flex">
-            <div class="product__common bxbb">
-                <div class="product__common_img flex">
-                    <div class="product__common_img_style flex">
-                        <img src="img/product_like_1.png" alt="photo"></div>
-                </div>
-                <div class="product__common_text">18 Mango People T-shirt <br>
-                    <span class="product__common_color">$52.00</span>
-                    <div class="product__common_hover bxbb">
-                        <a href="single_page.html" class="product__common_hover_a flex"></a>
-                        <div class="product__common_button flex">
-                            <a class="product__common_button_a flex" href="#">
-                                <img class="product__common_button_img"
-                                     src="img/hover_product.svg" alt="ico">Add to Cart</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="product__common bxbb">
-                <div class="product__common_img flex">
-                    <div class="product__common_img_style flex">
-                        <img src="img/product_like_2.png" alt="photo"></div>
-                </div>
-                <div class="product__common_text">19 Mango People T-shirt <br>
-                    <span class="product__common_color">$52.00</span>
-                    <div class="product__common_hover bxbb">
-                        <a href="single_page.html" class="product__common_hover_a flex"></a>
-                        <div class="product__common_button flex">
-                            <a class="product__common_button_a flex" href="#">
-                                <img class="product__common_button_img"
-                                     src="img/hover_product.svg" alt="ico">Add to Cart</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="product__common bxbb">
-                <div class="product__common_img flex">
-                    <div class="product__common_img_style flex">
-                        <img src="img/product_like_3.png" alt="photo"></div>
-                </div>
-                <div class="product__common_text">20 Mango People T-shirt <br>
-                    <span class="product__common_color">$52.00</span>
-                    <div class="product__common_hover bxbb">
-                        <a href="single_page.html" class="product__common_hover_a flex"></a>
-                        <div class="product__common_button flex">
-                            <a class="product__common_button_a flex" href="#">
-                                <img class="product__common_button_img"
-                                     src="img/hover_product.svg" alt="ico">Add to Cart</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="product__common bxbb">
-                <div class="product__common_img flex">
-                    <div class="product__common_img_style flex">
-                        <img src="img/product_like_4.png" alt="photo"></div>
-                </div>
-                <div class="product__common_text">21 Mango People T-shirt <br>
-                    <span class="product__common_color">$52.00</span>
-                    <div class="product__common_hover bxbb">
-                        <a href="single_page.html" class="product__common_hover_a flex"></a>
-                        <div class="product__common_button flex">
-                            <a class="product__common_button_a flex" href="#">
-                                <img class="product__common_button_img"
-                                     src="img/hover_product.svg" alt="ico">Add to Cart</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <catalog
+                :address="false"
+                :quantity-item="4"
+        ></catalog>
     </div>
 
 
@@ -406,6 +347,7 @@
                 <a class="flex" target="_blank" href="#"><i class="fab fa-google-plus-g"></i></a>
             </div>
         </div>
+    </div>
     </div>
 </body>
 
