@@ -1,7 +1,7 @@
 [
   {
     "id": 6544,
-    "img": "product_1.jpg",
+    "img": "img/product_1.jpg",
     "title": "1 Mango People T-shirt",
     "price": 52,
     "color": "aliceblue",
@@ -9,7 +9,7 @@
   },
   {
     "id": 6541,
-    "img": "product_2.jpg",
+    "img": "img/product_2.jpg",
     "title": "2 Mango People T-shirt",
     "price": 42,
     "color": "black",
@@ -17,7 +17,7 @@
   },
   {
     "id": 6542,
-    "img": "product_3.jpg",
+    "img": "img/product_3.jpg",
     "title": "3 Mango People T-shirt",
     "price": 56,
     "color": "red",
@@ -25,7 +25,7 @@
   },
   {
     "id": 6543,
-    "img": "product_4.jpg",
+    "img": "img/product_4.jpg",
     "title": "4 Mango People T-shirt",
     "price": 31,
     "color": "aqua",
@@ -33,7 +33,7 @@
   },
   {
     "id": 6545,
-    "img": "product_5.jpg",
+    "img": "img/product_5.jpg",
     "title": "5 Mango People T-shirt",
     "price": 61,
     "color": "blue",
@@ -41,7 +41,7 @@
   },
   {
     "id": 6546,
-    "img": "product_6.jpg",
+    "img": "img/product_6.jpg",
     "title": "6 Mango People T-shirt",
     "price": 49,
     "color": "darkblue",
@@ -49,7 +49,7 @@
   },
   {
     "id": 6547,
-    "img": "product_7.jpg",
+    "img": "img/product_7.jpg",
     "title": "7 Mango People T-shirt",
     "price": 38,
     "color": "white",
@@ -57,7 +57,7 @@
   },
   {
     "id": 6548,
-    "img": "product_8.jpg",
+    "img": "img/product_8.jpg",
     "title": "8 Mango People T-shirt",
     "price": 91,
     "color": "greenyellow",
