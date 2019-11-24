@@ -1,1 +1,26 @@
-[]
+[
+{
+    "id": 6549,
+    "img": "img/man_product(1).jpg",
+    "title": "9 Mango People T-shirt",
+    "price": 87,
+    "color": "yellow",
+    "size": "XL"
+  },
+  {
+    "id": 6540,
+    "img": "img/man_product(2).jpg",
+    "title": "10 Mango People T-shirt",
+    "price": 83,
+    "color": "brown",
+    "size": "XL"
+  },
+  {
+    "id": 6530,
+    "img": "img/man_product(3).jpg",
+    "title": "11 Mango People T-shirt",
+    "price": 79,
+    "color": "darkmagenta",
+    "size": "XS"
+  }
+]
