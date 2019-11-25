@@ -4,11 +4,7 @@
     <list default="true" id="af66dfa5-e23f-4c3a-9c78-f058bb6e6dcd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shopping_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping_cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basket.json" beforeDir="false" afterPath="$PROJECT_DIR$/basket.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Shopping_cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Shopping_cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/addBasket.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/addBasket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/productList.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/productList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/productListCatalog.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
