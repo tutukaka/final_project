@@ -5,7 +5,8 @@
     "title": "1 Mango People T-shirt",
     "price": 52,
     "color": "aliceblue",
-    "size": "XXL"
+    "size": "XXL",
+    "url": "single_page.html"
   },
   {
     "id": 6541,
@@ -13,7 +14,8 @@
     "title": "2 Mango People T-shirt",
     "price": 42,
     "color": "black",
-    "size": "XL"
+    "size": "XL",
+    "url": "single_page.html"
   },
   {
     "id": 6542,
@@ -21,7 +23,8 @@
     "title": "3 Mango People T-shirt",
     "price": 56,
     "color": "red",
-    "size": "L"
+    "size": "L",
+    "url": "single_page.html"
   },
   {
     "id": 6543,
@@ -29,7 +32,8 @@
     "title": "4 Mango People T-shirt",
     "price": 31,
     "color": "aqua",
-    "size": "M"
+    "size": "M",
+    "url": "single_page.html"
   },
   {
     "id": 6545,
@@ -37,7 +41,8 @@
     "title": "5 Mango People T-shirt",
     "price": 61,
     "color": "blue",
-    "size": "XS"
+    "size": "XS",
+    "url": "single_page.html"
   },
   {
     "id": 6546,
@@ -45,7 +50,8 @@
     "title": "6 Mango People T-shirt",
     "price": 49,
     "color": "darkblue",
-    "size": "S"
+    "size": "S",
+    "url": "single_page.html"
   },
   {
     "id": 6547,
@@ -53,7 +59,8 @@
     "title": "7 Mango People T-shirt",
     "price": 38,
     "color": "white",
-    "size": "XL"
+    "size": "XL",
+    "url": "single_page.html"
   },
   {
     "id": 6548,
@@ -61,7 +68,8 @@
     "title": "8 Mango People T-shirt",
     "price": 91,
     "color": "greenyellow",
-    "size": "X"
+    "size": "X",
+    "url": "single_page.html"
   },
   {
     "id": 6549,
@@ -69,7 +77,8 @@
     "title": "9 Mango People T-shirt",
     "price": 87,
     "color": "yellow",
-    "size": "XL"
+    "size": "XL",
+    "url": "single_page.html"
   },
   {
     "id": 6540,
@@ -77,7 +86,8 @@
     "title": "10 Mango People T-shirt",
     "price": 83,
     "color": "brown",
-    "size": "XL"
+    "size": "XL",
+    "url": "single_page.html"
   },
   {
     "id": 6530,
@@ -85,7 +95,8 @@
     "title": "11 Mango People T-shirt",
     "price": 79,
     "color": "darkmagenta",
-    "size": "XS"
+    "size": "XS",
+    "url": "single_page.html"
   },
 {
     "id": 6531,
@@ -93,7 +104,8 @@
     "title": "12 Mango People T-shirt",
     "price": 82,
     "color": "deepskyblue",
-    "size": "L"
+    "size": "L",
+    "url": "single_page.html"
   },
 {
     "id": 6532,
@@ -101,7 +113,8 @@
     "title": "13 Mango People T-shirt",
     "price": 75,
     "color": "forestgreen",
-    "size": "S"
+    "size": "S",
+    "url": "single_page.html"
   },
 {
     "id": 6533,
@@ -109,7 +122,8 @@
     "title": "14 Mango People T-shirt",
     "price": 66,
     "color": "gray",
-    "size": "M"
+    "size": "M",
+    "url": "single_page.html"
   },
 {
     "id": 6534,
@@ -117,7 +131,8 @@
     "title": "15 Mango People T-shirt",
     "price": 33,
     "color": "teal",
-    "size": "XL"
+    "size": "XL",
+    "url": "single_page.html"
   },
 {
     "id": 6535,
@@ -125,7 +140,8 @@
     "title": "16 Mango People T-shirt",
     "price": 41,
     "color": "tan",
-    "size": "S"
+    "size": "S",
+    "url": "single_page.html"
   },
 {
     "id": 6536,
@@ -133,7 +149,8 @@
     "title": "17 Mango People T-shirt",
     "price": 55,
     "color": "slategray",
-    "size": "M"
+    "size": "M",
+    "url": "single_page.html"
   },
 {
     "id": 6537,
@@ -141,7 +158,8 @@
     "title": "18 Mango People T-shirt",
     "price": 74,
     "color": "darkolivegreen",
-    "size": "XXL"
+    "size": "XXL",
+    "url": "single_page.html"
   },
 {
     "id": 6538,
@@ -149,7 +167,8 @@
     "title": "19 Mango People T-shirt",
     "price": 64,
     "color": "darksalmon",
-    "size": "XS"
+    "size": "XS",
+    "url": "single_page.html"
   },
 {
     "id": 6539,
@@ -157,7 +176,8 @@
     "title": "20 Mango People T-shirt",
     "price": 53,
     "color": "ivory",
-    "size": "XL"
+    "size": "XL",
+    "url": "single_page.html"
   },
   {
     "id": 6550,
@@ -165,6 +185,7 @@
     "title": "21 Mango People T-shirt",
     "price": 93,
     "color": "khaki",
-    "size": "S"
+    "size": "S",
+    "url": "single_page.html"
   }
 ]
