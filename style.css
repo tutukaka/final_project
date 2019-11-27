@@ -140,6 +140,17 @@ body {
   border-bottom: 1px solid #222222;
 }
 
+.cart_product_length {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 25px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+}
 .cart_product_table {
   border-collapse: collapse;
 }

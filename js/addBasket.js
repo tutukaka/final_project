@@ -74,14 +74,19 @@ Vue.component('basket', {
             .then((item) => {
                 this.cart = item;
             });
+
     },
     computed: {
         grandTotal() {
             return this.cart.reduce((acc, item) => acc + item.quantity * item.price, 0);
+        },
+        quantityItemCart(){
+            return this.cart.length
         }
     },
     template:`
 <div>
+<div class="cart_product_length" v-if="quantityItemCart !== 0">{{ quantityItemCart }}</div>
     <div v-if="outBasket('min')" class="drop drop_cart">
         <div class="drop__flex">
             <div class="cart_product">
@@ -101,7 +106,7 @@ Vue.component('basket', {
                     href="checkout.html">Checkout</a></div>
             <div class="cart_product_button flex">
                 <a class="cart_product_button_a flex"
-                   href="#">Go to cart</a></div>
+                   href="Shopping_cart.html">Go to cart</a></div>
         </div>
     </div>
     <div v-if="outBasket('big')" class="shopping container">
@@ -160,7 +165,7 @@ Vue.component('basket', {
                         <h3 class="shopping_proceed_h3">grand total
                             <span  id="grand_total" class="shopping_proceed_h3_span">$&nbsp;{{ grandTotal }}</span></h3>
                     </div>
-                    <div class="shopping_proceed_button"><a class="flex" href="#">proceed to checkout</a></div>
+                    <div class="shopping_proceed_button"><a class="flex" href="checkout.html">proceed to checkout</a></div>
                 </div>
             </div>
         </div>
