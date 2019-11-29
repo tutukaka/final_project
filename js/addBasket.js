@@ -67,14 +67,71 @@ Vue.component('basket', {
                 return false
             }
 
-        }
+        },
+        handleBuyClick(item) {
+            // проверяет есть ли в корзине этот товар
+            for (let i = 0; i < this.basket.length; i++) {
+                if (this.basket[i].id === item.id) {
+                    //если есть добавляет количество товара
+                    return this.addQuantityAdd(item.id, i);
+                }
+            }
+            //если нет добавляет товар в корзину
+            return this.addItemBasket(item);
+        },
+        addItemBasket(item){
+            let prod = Object.assign({quantity: 1}, item);
+            this.basket.push(prod);
+            return fetch(`cart`, {
+                method: 'POST',
+                body: JSON.stringify(prod),
+                headers: {
+                    'Content-type': 'application/json',
+                },
+            })
+        },
+        addQuantityAdd(id, i){
+            this.basket[i].quantity++;
+            this.updateQuantityServer(id, i);
+        },
+        addQuantityDiminish(id){
+            for (let i = 0; i < this.basket.length; i++) {
+                if (this.basket[i].id === id) {
+                    if (this.basket[i].quantity > 1) {
+                        this.basket[i].quantity--;
+                        this.updateQuantityServer(id, i);
+                        return false
+                    } else if (confirm('Вы действительно хотите удалить товар из корзины?')) {
+                        return this.handleDeleteClick(id);
+                    } else {
+                        return false;
+                    }
+                }
+            }
+        },
+        //обновляет количество товара на сервере
+        updateQuantityServer(id, i){
+            return fetch(`/cart/${id}`, {
+                method: 'PATCH',
+                body: JSON.stringify({quantity: this.basket[i].quantity}),
+                headers: {
+                    'Content-type': 'application/json',
+                },
+            })
+        },
+        //удаляет товар с сервера
+        handleDeleteClick(id) {
+            return fetch(`/cart/${id}`, {
+                method: 'DELETE',}).then(() => {
+                this.basket = this.basket.filter((item) => item.id !== id);
+            });
+        },
     },
     mounted() {
-        this.$parent.getJson(`https://raw.githubusercontent.com/tutukaka/final_project/first_try/basket.json`)
+        this.$parent.getJson(`/cart`)
             .then((item) => {
                 this.cart = item;
             });
-
     },
     computed: {
         grandTotal() {
@@ -96,7 +153,8 @@ Vue.component('basket', {
                     :cart="item"
                 ></min-basket-item>
                 </table>
-                <div class="cart_product_text_price flex">
+                <p class="shopping__empty_mini" v-if="!cart.length">Корзина пуста</p>
+                <div v-if="quantityItemCart !== 0" class="cart_product_text_price flex">
                     <h3 class="cart_product_text_price_h3">TOTAL</h3>
                     <h3 class="cart_product_text_price_h3">$&nbsp;{{ grandTotal }}</h3>
                 </div>

@@ -652,10 +652,15 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 3px;
+  background-color: transparent;
 }
 .product__common_button_a:hover {
-  transition: box-shadow 1s;
+  transition: box-shadow 1s, background-color 0.4s;
   box-shadow: 0 0 5px #fff;
+}
+.product__common_button_a:active {
+  transition: background-color 0.4s;
+  background-color: #f16d7f;
 }
 .product__common_button_a_man {
   width: 57px;

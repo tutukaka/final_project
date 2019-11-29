@@ -530,9 +530,13 @@ body
         justify-content: center
         align-items: center
         border-radius: 3px
+        background-color: transparent
         &:hover
-          transition: box-shadow 1s
+          transition: box-shadow 1s, background-color 0.4s
           box-shadow: 0 0 5px #fff
+        &:active
+          transition: background-color 0.4s
+          background-color: #f16d7f
         &_man
           width: 57px
           height: 39px
@@ -1155,6 +1159,7 @@ body
   &__empty
     text-align: center
     margin: 40px 10px 100px
+    &_mini
   &__table
     border-collapse: collapse
     margin-bottom: 44px

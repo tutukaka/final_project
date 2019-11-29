@@ -45,7 +45,7 @@ Vue.component('catalog', {
         }
     },
     mounted(){
-        this.$parent.getJson('https://raw.githubusercontent.com/tutukaka/final_project/first_try/catalog.json')
+        this.$parent.getJson(`/goods`)
             .then((goods) => {
                 this.items = goods;
             });
