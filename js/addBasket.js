@@ -20,7 +20,7 @@ const bigBasketItem = {
 <td class="shopping__column shopping__column_shipping">free</td>
 <td class="shopping__column">$&nbsp;{{ cart.price * cart.quantity }}</td>
 <td class="shopping__column shopping__column_action">
-<i class="fas fa-times-circle"></i>
+<div @click="$emit('handle-delete-click', cart.id)"><i class="fas fa-times-circle"></i></div>
 </td>
 </tr>
     `
@@ -37,13 +37,13 @@ const minBasketItem = {
         <a class="cart_product_child_2_a" href="#">
             <h3 class="cart_product_child_2_a_h3">Rebox Zane</h3>
             <img src="img/stars.jpg" alt="stars">
-            <p class="cart_product_child_2_a_p">{{ cart.quantity }}  x
+            <p class="cart_product_child_2_a_p" >{{ cart.quantity }}  x
                 <span class="cart_product_child_2_a_p_span">$&nbsp;{{ cart.price }}
                 </span></p></a></td>
     <td class="cart_product_column cart_product_child_3">
-        <a class="cart_product_child_3_a" href="#">
+        <div class="cart_product_child_3_a" @click="$emit('handle-delete-click', cart.id)">
             <i class="cart_product_child_3_a_i fas fa-times-circle">
-            </i></a></td>
+            </i></div></td>
 </tr>
     `
 };
@@ -70,8 +70,8 @@ Vue.component('basket', {
         },
         handleBuyClick(item) {
             // проверяет есть ли в корзине этот товар
-            for (let i = 0; i < this.basket.length; i++) {
-                if (this.basket[i].id === item.id) {
+            for (let i = 0; i < this.cart.length; i++) {
+                if (this.cart[i].id === item.id) {
                     //если есть добавляет количество товара
                     return this.addQuantityAdd(item.id, i);
                 }
@@ -81,7 +81,7 @@ Vue.component('basket', {
         },
         addItemBasket(item){
             let prod = Object.assign({quantity: 1}, item);
-            this.basket.push(prod);
+            this.cart.push(prod);
             return fetch(`cart`, {
                 method: 'POST',
                 body: JSON.stringify(prod),
@@ -91,14 +91,14 @@ Vue.component('basket', {
             })
         },
         addQuantityAdd(id, i){
-            this.basket[i].quantity++;
+            this.cart[i].quantity++;
             this.updateQuantityServer(id, i);
         },
         addQuantityDiminish(id){
-            for (let i = 0; i < this.basket.length; i++) {
-                if (this.basket[i].id === id) {
-                    if (this.basket[i].quantity > 1) {
-                        this.basket[i].quantity--;
+            for (let i = 0; i < this.cart.length; i++) {
+                if (this.cart[i].id === id) {
+                    if (this.cart[i].quantity > 1) {
+                        this.cart[i].quantity--;
                         this.updateQuantityServer(id, i);
                         return false
                     } else if (confirm('Вы действительно хотите удалить товар из корзины?')) {
@@ -113,7 +113,7 @@ Vue.component('basket', {
         updateQuantityServer(id, i){
             return fetch(`/cart/${id}`, {
                 method: 'PATCH',
-                body: JSON.stringify({quantity: this.basket[i].quantity}),
+                body: JSON.stringify({quantity: this.cart[i].quantity}),
                 headers: {
                     'Content-type': 'application/json',
                 },
@@ -123,7 +123,7 @@ Vue.component('basket', {
         handleDeleteClick(id) {
             return fetch(`/cart/${id}`, {
                 method: 'DELETE',}).then(() => {
-                this.basket = this.basket.filter((item) => item.id !== id);
+                this.cart = this.cart.filter((item) => item.id !== id);
             });
         },
     },
@@ -149,6 +149,9 @@ Vue.component('basket', {
             <div class="cart_product">
                 <table  class="cart_product_table">
                     <min-basket-item v-for="item in cart"
+                    @handle-buy-click="handleBuyClick"
+                    @add-quantity-diminish="addQuantityDiminish"
+                    @handle-delete-click="handleDeleteClick"
                     :key="item.id"
                     :cart="item"
                 ></min-basket-item>
@@ -180,6 +183,9 @@ Vue.component('basket', {
                     <td class="shopping__column shopping__column_action shopping__column_head">ACTION</td>
                 </tr>
                  <big-basket-item v-for="item in cart"
+                    @handle-buy-click="handleBuyClick"
+                    @add-quantity-diminish="addQuantityDiminish"
+                    @handle-delete-click="handleDeleteClick"
                     :key="item.id"
                     :cart="item"
                 ></big-basket-item>

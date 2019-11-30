@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af66dfa5-e23f-4c3a-9c78-f058bb6e6dcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product.html" beforeDir="false" afterPath="$PROJECT_DIR$/Product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shopping_cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shopping_cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basket.json" beforeDir="false" afterPath="$PROJECT_DIR$/basket.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/addBasket.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/addBasket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/productList.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/productList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,8 +77,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\lesson_git\final_project" />
       <recent name="C:\lesson_git\final_project\js" />
+      <recent name="C:\lesson_git\final_project" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -125,7 +125,7 @@
       <workItem from="1575016662279" duration="63000" />
       <workItem from="1575016996611" duration="83000" />
       <workItem from="1575017105800" duration="727000" />
-      <workItem from="1575017852748" duration="3584000" />
+      <workItem from="1575017852748" duration="6631000" />
     </task>
     <servers />
   </component>

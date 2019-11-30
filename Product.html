@@ -62,6 +62,7 @@
                 <div class="relative header__right_drop_hover flex">
                     <a class="header__cart flex" href="#"><img src="img/Forma_1.svg" alt="cart"></a>
                     <basket
+                            ref="basket"
                         :basket-size="'min'"
                     ></basket>
                 </div>
@@ -273,6 +274,7 @@
                 </div>
             </div>
             <catalog
+                    ref="catalog"
                     :address="true"
                     :quantity-item="9"
             ></catalog>

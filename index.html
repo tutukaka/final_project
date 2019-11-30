@@ -67,6 +67,7 @@
                     <a class="header__cart flex" href="#">
                         <img src="img/Forma_1.svg" alt="cart"></a>
                     <basket
+                            ref="basket"
                         :basket-size="'min'"
                     ></basket>
                 </div>
@@ -164,6 +165,7 @@
         <h3 class="product__h3">Fetured Items</h3>
         <p class="product__p">Shop for items based on what we featured in this week</p>
         <catalog
+                ref="catalog"
             :address="false"
             :quantity-item="8"
         ></catalog>
