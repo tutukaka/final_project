@@ -1,1 +1,191 @@
-[]
+[
+  {
+    "id": 6544,
+    "img": "img/product_1.jpg",
+    "title": "1 Mango People T-shirt",
+    "price": 52,
+    "color": "aliceblue",
+    "size": "XXL",
+    "url": "single_page.html"
+  },
+  {
+    "id": 6541,
+    "img": "img/product_2.jpg",
+    "title": "2 Mango People T-shirt",
+    "price": 42,
+    "color": "black",
+    "size": "XL",
+    "url": "single_page.html"
+  },
+  {
+    "id": 6542,
+    "img": "img/product_3.jpg",
+    "title": "3 Mango People T-shirt",
+    "price": 56,
+    "color": "red",
+    "size": "L",
+    "url": "single_page.html"
+  },
+  {
+    "id": 6543,
+    "img": "img/product_4.jpg",
+    "title": "4 Mango People T-shirt",
+    "price": 31,
+    "color": "aqua",
+    "size": "M",
+    "url": "single_page.html"
+  },
+  {
+    "id": 6545,
+    "img": "img/product_5.jpg",
+    "title": "5 Mango People T-shirt",
+    "price": 61,
+    "color": "blue",
+    "size": "XS",
+    "url": "single_page.html"
+  },
+  {
+    "id": 6546,
+    "img": "img/product_6.jpg",
+    "title": "6 Mango People T-shirt",
+    "price": 49,
+    "color": "darkblue",
+    "size": "S",
+    "url": "single_page.html"
+  },
+  {
+    "id": 6547,
+    "img": "img/product_7.jpg",
+    "title": "7 Mango People T-shirt",
+    "price": 38,
+    "color": "white",
+    "size": "XL",
+    "url": "single_page.html"
+  },
+  {
+    "id": 6548,
+    "img": "img/product_8.jpg",
+    "title": "8 Mango People T-shirt",
+    "price": 91,
+    "color": "greenyellow",
+    "size": "X",
+    "url": "single_page.html"
+  },
+  {
+    "id": 6549,
+    "img": "img/man_product(1).jpg",
+    "title": "9 Mango People T-shirt",
+    "price": 87,
+    "color": "yellow",
+    "size": "XL",
+    "url": "single_page.html"
+  },
+  {
+    "id": 6540,
+    "img": "img/man_product(2).jpg",
+    "title": "10 Mango People T-shirt",
+    "price": 83,
+    "color": "brown",
+    "size": "XL",
+    "url": "single_page.html"
+  },
+  {
+    "id": 6530,
+    "img": "img/man_product(3).jpg",
+    "title": "11 Mango People T-shirt",
+    "price": 79,
+    "color": "darkmagenta",
+    "size": "XS",
+    "url": "single_page.html"
+  },
+{
+    "id": 6531,
+    "img": "img/man_product(4).png",
+    "title": "12 Mango People T-shirt",
+    "price": 82,
+    "color": "deepskyblue",
+    "size": "L",
+    "url": "single_page.html"
+  },
+{
+    "id": 6532,
+    "img": "img/man_product(5).jpg",
+    "title": "13 Mango People T-shirt",
+    "price": 75,
+    "color": "forestgreen",
+    "size": "S",
+    "url": "single_page.html"
+  },
+{
+    "id": 6533,
+    "img": "img/man_product(6).png",
+    "title": "14 Mango People T-shirt",
+    "price": 66,
+    "color": "gray",
+    "size": "M",
+    "url": "single_page.html"
+  },
+{
+    "id": 6534,
+    "img": "img/man_product(7).jpg",
+    "title": "15 Mango People T-shirt",
+    "price": 33,
+    "color": "teal",
+    "size": "XL",
+    "url": "single_page.html"
+  },
+{
+    "id": 6535,
+    "img": "img/man_product(8).jpg",
+    "title": "16 Mango People T-shirt",
+    "price": 41,
+    "color": "tan",
+    "size": "S",
+    "url": "single_page.html"
+  },
+{
+    "id": 6536,
+    "img": "img/man_product(9).png",
+    "title": "17 Mango People T-shirt",
+    "price": 55,
+    "color": "slategray",
+    "size": "M",
+    "url": "single_page.html"
+  },
+{
+    "id": 6537,
+    "img": "img/product_like_1.png",
+    "title": "18 Mango People T-shirt",
+    "price": 74,
+    "color": "darkolivegreen",
+    "size": "XXL",
+    "url": "single_page.html"
+  },
+{
+    "id": 6538,
+    "img": "img/product_like_2.png",
+    "title": "19 Mango People T-shirt",
+    "price": 64,
+    "color": "darksalmon",
+    "size": "XS",
+    "url": "single_page.html"
+  },
+{
+    "id": 6539,
+    "img": "img/product_like_3.png",
+    "title": "20 Mango People T-shirt",
+    "price": 53,
+    "color": "ivory",
+    "size": "XL",
+    "url": "single_page.html"
+  },
+  {
+    "id": 6550,
+    "img": "img/product_like_4.png",
+    "title": "21 Mango People T-shirt",
+    "price": 93,
+    "color": "khaki",
+    "size": "S",
+    "url": "single_page.html"
+  }
+]

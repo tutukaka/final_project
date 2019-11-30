@@ -103,6 +103,16 @@ body
         border-bottom: 1px solid #222222
 
 .cart_product
+  &_length
+    width: 20px
+    height: 20px
+    position: absolute
+    top: 0
+    left: 25px
+    background-color: red
+    border-radius: 50%
+    color: white
+    text-align: center
   &_table
     border-collapse: collapse
   & a
@@ -461,7 +471,6 @@ body
     line-height: 9px
     position: relative
     transition: box-shadow 1s, background-color 1s
-    flex: 1 1 auto
     margin: 28px 12px 12px
     &:hover
       box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
@@ -521,9 +530,13 @@ body
         justify-content: center
         align-items: center
         border-radius: 3px
+        background-color: transparent
         &:hover
-          transition: box-shadow 1s
+          transition: box-shadow 1s, background-color 0.4s
           box-shadow: 0 0 5px #fff
+        &:active
+          transition: background-color 0.4s
+          background-color: #f16d7f
         &_man
           width: 57px
           height: 39px
@@ -1143,6 +1156,10 @@ body
 .shopping
   padding-top: 70px
   padding-bottom: 79px
+  &__empty
+    text-align: center
+    margin: 40px 10px 100px
+    &_mini
   &__table
     border-collapse: collapse
     margin-bottom: 44px

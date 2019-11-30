@@ -7,9 +7,13 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="js/addBasket.js" defer></script>
+    <script src="js/global.js" defer></script>
 </head>
 
 <body>
+<div class="global">
     <div class="header">
         <div class="container flex header__flex">
             <div class="header__left flex">
@@ -55,59 +59,11 @@
             <div class="header__right flex">
                 <div class="relative header__right_drop_hover flex">
                     <a class="header__cart flex" href="#"><img src="img/Forma_1.svg" alt="cart"></a>
-                    <div class="drop drop_cart">
-                        <div class="drop__flex">
-                            <div class="cart_product">
-                                <table  class="cart_product_table">
-                                    <tr>
-                                        <td class="cart_product_column cart_product_child_1">
-                                            <a href="#">
-                                                <img class="cart_product_img_product flex"
-                                                     src="img/cart_img.jpg" alt="photo">
-                                            </a></td>
-                                        <td class="cart_product_column cart_product_child_2">
-                                            <a class="cart_product_child_2_a" href="#">
-                                                <h3 class="cart_product_child_2_a_h3">Rebox Zane</h3>
-                                                <img src="img/stars.jpg" alt="stars">
-                                                <p class="cart_product_child_2_a_p">1  x
-                                                    <span class="cart_product_child_2_a_p_span">$250</span>
-                                                </p></a></td>
-                                        <td class="cart_product_column cart_product_child_3">
-                                            <a class="cart_product_child_3_a" href="#">
-                                                <i class="cart_product_child_3_a_i fas fa-times-circle">
-                                                </i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="cart_product_column cart_product_child_1">
-                                            <a href="#">
-                                                <img class="cart_product_img_product flex"
-                                                     src="img/women_product.jpg" alt=""></a></td>
-                                        <td class="cart_product_column cart_product_child_2">
-                                            <a class="cart_product_child_2_a" href="#">
-                                                <h3 class="cart_product_child_2_a_h3">Rebox Zane</h3>
-                                                <img src="img/stars.jpg" alt="stars">
-                                                <p class="cart_product_child_2_a_p">1  x
-                                                    <span class="cart_product_child_2_a_p_span">$250
-                                                    </span></p></a></td>
-                                        <td class="cart_product_column cart_product_child_3">
-                                            <a class="cart_product_child_3_a" href="#">
-                                                <i class="cart_product_child_3_a_i fas fa-times-circle">
-                                                </i></a></td>
-                                    </tr>
-                                </table>
-                                <div class="cart_product_text_price flex">
-                                    <h3 class="cart_product_text_price_h3">TOTAL</h3>
-                                    <h3 class="cart_product_text_price_h3">$500.00</h3>
-                                </div>
-                            </div>
-                            <div class="cart_product_button cart_product_button_checkout flex">
-                                <a  class="cart_product_button_a cart_product_button_checkout_a flex"
-                                    href="#">Checkout</a></div>
-                            <div class="cart_product_button flex">
-                                <a class="cart_product_button_a flex"
-                                   href="Shopping_cart.html">Go to cart</a></div>
-                        </div>
-                    </div>
+
+                    <basket
+                        ref="basket"
+                        :basket-size="'min'"
+                    ></basket>
                 </div>
                 <a class="button decoration_none bxbb" href="#">My Account
                     <i class="fas fa-sort-down"></i></a>
@@ -660,6 +616,7 @@
             </div>
         </div>
     </div>
+</div>
 </body>
 
 </html>
