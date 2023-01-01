@@ -8,7 +8,7 @@
     "fs": "0.0.1-security"
   },
   "devDependencies": {
-    "webpack": "^4.41.2"
+    "webpack": "^5.75.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
